@@ -33,8 +33,8 @@ function numeroRandom(min, max) {
 
 for (let i = 0; i< squadreCalcio.length; i++) {
   
-    (squadreCalcio[i].puntiFatti) = numeroRandom(0, 30);    
-    (squadreCalcio[i].falliSubiti) = numeroRandom(0, 100);    
+    squadreCalcio[i].puntiFatti = numeroRandom(0, 30);    
+    squadreCalcio[i].falliSubiti = numeroRandom(0, 100);    
   };
 
 
@@ -45,11 +45,13 @@ console.log(squadreCalcio);
 const nuovoArray = [];
 
 for (let i = 0; i < squadreCalcio.length; i++) {
+    
   const squadra = squadreCalcio[i];
 
   nuovoArray.push({
     nome: squadra.nome,
     falliSubiti: squadra.falliSubiti
+
   });
 }
 

@@ -34,20 +34,20 @@ console.log(biciclette);
 
 // ciclo for per trovare il peso minore 
 
-let pesoMinimo = biciclette[0].peso;
+let biciclettaLeggera = biciclette[0];
 
-console.log(pesoMinimo);
+console.log(biciclettaLeggera);
 
 for (let index = 0; index < biciclette.length; index++) {
 
-    if (biciclette[index].peso < pesoMinimo) {
+    if (biciclette[index].peso < biciclettaLeggera.peso) {
 
-        pesoMinimo = biciclette[index].peso
+        biciclettaLeggera = biciclette[index]
     }
 }
 
-console.log(pesoMinimo);
+console.log(biciclettaLeggera);
 
-titolo.innerText = "La bicicletta più leggera pesa " + pesoMinimo;
+titolo.innerText = "La bicicletta più leggera è " + biciclettaLeggera.nome + " che pesa " + biciclettaLeggera.peso;
 
 
